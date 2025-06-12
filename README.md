@@ -16,6 +16,7 @@ El sistema consta de:
 - Una **tabla** que muestra a los pacientes en espera.
 - Elementos que muestran al **paciente actual**, al **siguiente paciente**, y una **frase hablada** con `SpeechSynthesis`.
 - Lógica de cola para manejar el orden de atención.
+![image](https://github.com/user-attachments/assets/14c7afc7-9a37-466c-8127-e26b965fa148)
 
 
 
