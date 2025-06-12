@@ -18,4 +18,3 @@ El sistema consta de:
 - Lógica de cola para manejar el orden de atención.
 
 
-
