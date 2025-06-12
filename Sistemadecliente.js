@@ -84,6 +84,7 @@ class Queue {
       clienteedad.textContent = `${arreglo[0].edad}-años`
       cleintesintoma.textContent = arreglo[0].sintomas
     }
+    return arreglo[0].nombre
 
   }
 }
@@ -91,10 +92,12 @@ const clienteingresado = new Queue()
 
 
 nuevocliente.addEventListener('click', () => {
-  clienteingresado.enqueue(nombre.value, edad.value, sintoma.value)
-  nombre.value = ''
-  edad.value = ''
-  sintoma.value = ''
+  if (nombre.value == '' || edad.value == '' || sintoma.value == '') { } else {
+    clienteingresado.enqueue(nombre.value, edad.value, sintoma.value)
+    nombre.value = ''
+    edad.value = ''
+    sintoma.value = ''
+  }
 })
 
 
@@ -114,7 +117,6 @@ const crearnuevo = (cliente, index) => {
 
 siguiente.addEventListener('click', () => {
   ciontenedorsiguinte.hidden = false
-  clienteingresado.peek2()
   clienteingresado.peek()
   decir(clienteingresado.peek2())
   clienteingresado.deques()
